@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login & upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    
+    <div class="px-4 py-3 my-2 text-center">
+        <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Azure Logo" width="192" height="192"/>
+        <h1 class="display-6 fw-bold text-primary">Welcome to Esker</h1>
+        <h2 class="display-6 fw-bold text-primary"></h2>Powered by Azure</h2>            
+    </div>
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <label for="useremail">Useremail:</label><br>
+        <input type="text" id="useremail" name="useremail"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <input type="file" name="file" accept=".csv"><br>
+        <p style="color:blue;">Upload csv file</p>
+        <input type="submit" value="Submit"><br>
+    </form>
+    
+</body>
+</html>
