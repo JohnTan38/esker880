@@ -1,5 +1,5 @@
 Flask==2.2.2
-werkzeug
+werkzeug=2.2.2
 
 selenium
 setuptools
