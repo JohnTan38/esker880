@@ -11,7 +11,7 @@ import io,os,time
 from distutils.log import debug
 from fileinput import filename
 import pandas as pd
-from flask import *
+#from flask import *
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = os.path.join('staticFiles', 'uploads')
